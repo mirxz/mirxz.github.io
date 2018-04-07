@@ -234,7 +234,7 @@
 
          connectionUri = data.pagination.next_url;
          table.appendRows(tableData);
-          if (connectionUri && iteration < 500) {
+          if (connectionUri && iteration < 5000) {
             iteration++;
             getPage(connectionUri);
           }
@@ -327,7 +327,7 @@
          
           connectionUri = data2.pagination.next_url;
           table.appendRows(tableData);
-          if (connectionUri &&  iteration < 200) {
+          if (connectionUri &&  iteration < 2000) {
             iteration++;
             getPage(connectionUri,count);
           }
