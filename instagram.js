@@ -276,7 +276,7 @@
 
       var dataToReturn = [];
       var hasMoreData = false;
-      var new_url = "https://api.instagram.com/v1/users/"+user_id+"/media/recent/count=33&?access_token="+accessToken;
+      var new_url = "https://api.instagram.com/v1/users/"+user_id+"/media/recent?count=33&?access_token="+accessToken;
       if (count == 0) {
         var iteration = count;
       }
