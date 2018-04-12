@@ -64,7 +64,7 @@
   // It appends the passed in accessToek to the call to personalize the call for the user
   function getHashtag(accessToken, tickerSymbol) {
     
-      return "https://api.instagram.com/v1/tags/"+ tickerSymbol +"/media/recent?count=5&access_token=" +
+      return "https://api.instagram.com/v1/tags/"+ tickerSymbol +"/media/recent?count=33&access_token=" +
               accessToken;
   }
 
@@ -276,7 +276,7 @@
 
       var dataToReturn = [];
       var hasMoreData = false;
-      var new_url = "https://api.instagram.com/v1/users/"+user_id+"/media/recent/?access_token="+accessToken;
+      var new_url = "https://api.instagram.com/v1/users/"+user_id+"/media/recent/count=33&?access_token="+accessToken;
       if (count == 0) {
         var iteration = count;
       }
